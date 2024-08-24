@@ -1,17 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2016",
     "module": "commonjs",
-    "lib": ["es6"],
-    "allowJs": true,
-    "outDir": "build",
-    "baseUrl": "src",
-    "rootDir": "src",
-    "strict": true,
     "esModuleInterop": true,
-    "types": ["node", "jest"],
-    "skipLibCheck": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.spec.ts"]
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    //
+    "outDir": "./build",
+  }
 }
