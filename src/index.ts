@@ -1,1 +1,3 @@
-console.log("Hello, TypeScript!");
+import { bootstrap } from "src/interface/controller";
+
+bootstrap();

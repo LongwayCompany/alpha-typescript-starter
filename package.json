@@ -1,11 +1,12 @@
 {
-  "name": "longway-typescript-starter",
-  "version": "1.0.0",
+  "name": "alpha-typescript-starter",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "ts-node src/index.ts",
+    "build": "rimraf ./build && webpack --config webpack.config.js",
+    "start": "npm run build && node build/index.js",
+    "dev": "nodemon -r ts-node/register -r tsconfig-paths/register src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,7 +14,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.5.0",
+    "nodemon": "^3.1.4",
+    "rimraf": "^6.0.1",
+    "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "tsconfig-paths": "^4.2.0",
+    "tscpaths": "^0.0.9",
+    "typescript": "^5.5.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   }
 }
