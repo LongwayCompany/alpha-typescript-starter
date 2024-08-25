@@ -1,3 +1,3 @@
-export const bootstrap = () => {
+export const bootstrap = async () => {
   console.log("Hello, TypeScript!");
 }
